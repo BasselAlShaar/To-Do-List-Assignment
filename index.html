@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+  </head>
+  <body>
+    <main id="main-container">
+      <section id="left">
+        <section id="accounts">
+          <img
+            class="image profile"
+            src="Assets/Images/profile.jpg"
+            alt="profile"
+          />
+          <button id="name"><h1 class="user">James</h1></button>
+        </section>
+        <section id="logo-container">
+          <div id="button-container">
+            <button class="button add-task">New Task</button>
+            <button class="button change-user">Change User</button>
+          </div>
+          <div class="add-task-container">
+            <div class="description-container">
+              <textarea name="description" class="description-add"></textarea>
+              <label for="description">Description</label>
+            </div>
+            <div class="container">
+              <div class="calendar">
+                <header>
+                  <pre class="left">◀</pre>
+
+                  <div class="header-display">
+                    <p class="display">""</p>
+                  </div>
+
+                  <pre class="right">▶</pre>
+                </header>
+
+                <div class="week">
+                  <div>Su</div>
+                  <div>Mo</div>
+                  <div>Tu</div>
+                  <div>We</div>
+                  <div>Th</div>
+                  <div>Fr</div>
+                  <div>Sa</div>
+                </div>
+                <div class="days"></div>
+              </div>
+              <div class="display-selected">
+                <p class="selected"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="right">
+        <section class="right-container">
+          <section id="head">
+            <h2>Tasks</h2>
+          </section>
+          <section id="stages-container">
+            <button class="button stage-button pending-button">Pending</button>
+            <button
+              class="button stage-button completed-button"
+              id="div1"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            >
+              Completed
+            </button>
+            <button class="button stage-button past-due-button">
+              Past Due
+            </button>
+          </section>
+          <section class="tasks-container pending-container no-display">
+            <!--<div
+              class="task pending"
+              id="drag1"
+              src="img_logo.gif"
+              draggable="true"
+              ondragstart="drag(event)"
+              width="336"
+              height="69"
+            >
+              <div class="task-number"></div>
+              <div class="due-date"></div>
+              <div class="description"></div>
+            </div>-->
+          </section>
+          <section class="tasks-container completed-container no-display">
+            <!--<div class="task pending">
+              <div class="task-number"></div>
+              <div class="due-date"></div>
+              <div class="description"></div>
+            </div>-->
+          </section>
+          <section class="tasks-container past-due-container no-display">
+            <!--<div class="task pending">
+              <div class="task-number"></div>
+              <div class="due-date"></div>
+              <div class="description"></div>
+            </div>-->
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="Scripts/index.js"></script>
+  </body>
+</html>
