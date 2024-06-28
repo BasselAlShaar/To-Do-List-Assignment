@@ -83,7 +83,10 @@ function drop(ev) {
 
 /* I Used the following code from 
 https: //webdesign.tutsplus.com/learn-how-to-code-a-simple-javascript-calendar-and-datepicker--cms-108322t
-to use and see how a calender is created using html css and js*/
+to use and see how a calender is created using html css and js
+
+Extra note: Its not 100% copy paste, I tweaked it a bit
+*/
 
 
 let display = document.querySelector(".display");
